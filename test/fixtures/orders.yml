@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  order_code: MyString
+  pay_type_id: 1
+  total_price: 1.5
+  cell_phone: MyString
+
+two:
+  order_code: MyString
+  pay_type_id: 1
+  total_price: 1.5
+  cell_phone: MyString

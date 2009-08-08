@@ -1,0 +1,27 @@
+<h1>New order</h1>
+
+<% form_for(@order) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :order_code %><br />
+    <%= f.text_field :order_code %>
+  </p>
+  <p>
+    <%= f.label :pay_type_id %><br />
+    <%= f.text_field :pay_type_id %>
+  </p>
+  <p>
+    <%= f.label :total_price %><br />
+    <%= f.text_field :total_price %>
+  </p>
+  <p>
+    <%= f.label :cell_phone %><br />
+    <%= f.text_field :cell_phone %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', orders_path %>

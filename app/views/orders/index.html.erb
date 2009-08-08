@@ -1,0 +1,31 @@
+<%= javascript_include_tag  "form_validate" -%>
+<div class="ordercontent">
+<h1>支付宝--确认并提交订单</h1>
+<hr />
+<dl class="orderform">
+<dt>订单总金额：</dt>
+<dd><span class="price"><%= number_to_currency(@prices.values.sum) %></span></dd>
+<div class="clr"></div>
+</dl>
+
+<% form_for :order, :url => {:action => "create"}, :html => {:onsubmit => "onSubmitOrder(this);return false", :id => "form"} do |form| %>
+  <h2>填写订单信息：</h2>
+  <hr></hr>
+  <dl class="orderform">
+    <dt>支付方式：</dt>
+    <dd>
+      <%= form.select :pay_type_id, get_eq_options(@pay_types) %><span id="order_pay_type_id_error" class="error" style="display:none;">请选择支付方式</span>
+    </dd>
+    <dt>手机：</dt>
+    <dd>
+      <%= form.text_field :cell_phone %><span id="order_phone_error" class="error" style="display:none;">请选择手机</span>
+    </dd>
+    <div class="clr"></div>
+  </dl>
+
+  <div class="clr orderbtn_bg">
+    <%= form.submit "提交订单", :class => "btn_order" %>
+  </div>
+<% end %>
+</div>
+

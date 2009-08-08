@@ -1,0 +1,35 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 150%;
+	color: #000000;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	background-color:#091930;
+}
+img { border:0;}
+input,select { font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+
+h1 { font-size:28px; color:#742f01; line-height:180%; margin:0; padding:0;}
+h2 { font-size:18px; color:#742f01; line-height:150%; margin:0; padding:0;}
+
+
+hr { margin:0; padding:0; border-bottom:1px solid #fff; border-top:1px solid #b6b6b6;}
+
+
+.ordercontent { padding:0px 35px;}
+.ordertitle { text-align:center; margin-bottom:20px;}
+.statusbar { margin-bottom:20px;}
+.steptext { font-size:12px; color:#999; line-height:150%;}
+.steptext .yel { color:#f80;}
+dl.orderform { margin:10px 0 20px 0; padding:0; font-size:14px; color:#666; line-height:150%;}
+dl.orderform dt,dd { margin:0; padding:5px; float:left;}
+dl.orderform dt { width:16%; text-align:right;}
+dl.orderform dd { width:80%; color:#333;}
+dl.orderform input,select { font-family:Arial, Helvetica, sans-serif; font-size:14px;}
+dl.orderform .price { font-size:16px; color:#ff3300; font-weight:bold;}
+.orderbtn_bg { background-position:center top; background-repeat:no-repeat; padding:15px 0; margin:20px 0; text-align:center;}
+.orderbtn_bg input { margin:0 20px;}
+
+

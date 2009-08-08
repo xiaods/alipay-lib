@@ -1,0 +1,20 @@
+  <%= javascript_include_tag "order" -%>
+<div class="ordercontent">
+<h1>订单支付</h1>
+<hr></hr>
+<dt>订单号：</dt>
+<dd class="ordernum"><%= @order.order_code %></dd>
+<dt>订单总金额：</dt>
+<dd><span class="price"><%= number_to_currency(@order.total_price) %></span></dd>
+<dt>支付方式：</dt>
+<dd>
+  <%= @order.pay_type.value %>
+</dd>
+<div class="clr"></div>
+
+<div class="clr orderbtn_bg">
+  <input type="button" class="btn_order" value="立即支付" onclick="javascript:submitPayForm(<%= @order.pay_type_id %>)" />
+  <%= online_pay_form(:pay_type_id => @order.pay_type_id, :code => @order.order_code, :amount => @order.total_price) %>
+</div>
+
+</div>

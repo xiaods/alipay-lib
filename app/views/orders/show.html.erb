@@ -1,0 +1,23 @@
+<p>
+  <b>Order code:</b>
+  <%=h @order.order_code %>
+</p>
+
+<p>
+  <b>Pay type:</b>
+  <%=h @order.pay_type_id %>
+</p>
+
+<p>
+  <b>Total price:</b>
+  <%=h @order.total_price %>
+</p>
+
+<p>
+  <b>Cell phone:</b>
+  <%=h @order.cell_phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
